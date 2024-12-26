@@ -28,6 +28,6 @@ void serverside(product catalog[], int orders, int p1, int p2, double *totalsum)
 			}
 		}
 		*totalsum+=sum;
-		sprintf(message, "purchase complete, %d products, TOTAL: %.2lf euro\n", tmp, sum); 
+		sprintf(message, "Purchase complete, %d products, TOTAL: %.2lf euro\n", tmp, sum); 
 		write(p2, message, sizeof(message));
 }
